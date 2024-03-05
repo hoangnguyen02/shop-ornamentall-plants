@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/79624eb5cd.js" ></script>
+    <!-- crossorigin="anonymous" -->
+    <title>Trang Chủ</title>
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- hieu ung load trang web -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./asset/style.css">
+    <!-- <link rel="stylesheet" href="./asset/header_footer_responsive.css"> -->
+
+</head>
+<body>
+    <!-- loading webpage -->
+    <div id="loader">
+        <div class="circle">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </div>
+
+    <!-- start header -->
+    <header id="header_container">
+        <div class="header__logo">
+            <a href="./TrangChu.html" class="logo__a">
+                <svg id="svg-logo" height="80" width="162">
+                    <ellipse cx="80" cy="40" rx="80" ry="30" style="fill:rgb(82, 184, 117)"></ellipse>
+                    <text fill="#ffffff" font-size="40" font-family="Verdana"
+                    x="24" y="55">L&P</text>
+                </svg>
+            </a>
+        </div>
+
+        <div class="navbar" id="navbar_menu">
+            <ul class="navbar__ul">
+                <li class="navbar__li"><a class="navbar__a" href="./TrangChu.html">Trang chủ</a></li>
+                <li class="navbar__li"><a class="navbar__a" href="./GioiThieu.html">Giới thiệu</a></li>
+                <li class="navbar__li"><a class="navbar__a" href="./LienHe.html">Liên hệ</a></li>
+                <li class="navbar__li navbar__dropdown "><a id="drop_content_a" class="navbar__a" >Sản phẩm <i class="fa-solid fa-chevron-down"></i></i></a>
+                    <ul id="dropdown-content" class="display-none">
+                        <li class="dropdown-content__li"><a  class="dropdown-content__a" href="./SanPham.html">Cây Cảnh Trong nhà</a></li>
+                        <li class="dropdown-content__li"><a  class="dropdown-content__a" href="./SanPham.html">Cây Cảnh Văn Phòng</a></li>
+                        <li class="dropdown-content__li"><a  class="dropdown-content__a" href="./SanPham.html">Cây Cảnh Phong Thủy</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="header__search-user" action="">
+                <!-- search -->
+                <div class="header--search">
+                    <input class="search--input" type="text" placeholder="Tìm kiếm...">
+                    <button class="search--btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <!-- user && shop -->
+                <div class="header--user">
+                    <a href="./DangNhap.html" class="header--user--btn user--btn">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </a>
+                    <a class="shopping__cart header--user--btn shop--btn">
+                        <i class="fa-solid fa-cart-shopping"></i><sup class="no__order-item total">0</sup>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- menu mobile -->
+        <div id="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+</header>
+    <!-- end header -->
+
+    <!-- slider -->
+    <!-- <div id="slider"> -->
+        <img id="" src="./img/background.jpg" alt="" style="width: 1600px; height: 750px;">
+        <h3 class="slider__text">Luis & Peter Trees</h3>
+    </div>
+
+    
+
+    <!-- start main -->
+    <main class="main">
+       <div class="main__wrapper">
+            <div class="row">
+                <div class="main__options option-1">
+                    <div class="main__options__content">
+                        <h3>Cây Cảnh Để Bàn</h3>
+                        <span>Cây cảnh để bàn làm việc là điều cần thiết vì theo nghiên cứu của các nhà khoa học đã chứng minh thì màu xanh lá cây có tác dụng làm giảm căng thẳng, mỏi mệt, cải thiện tâm trạng không tốt và làm dịu mắt. Ngoài ra một số loại cây cảnh còn có tác dụng lọc bụi, hút bức xạ.
+
+                        </span>
+                            <button>Xem ngay</button>
+                    </div>
+                </div>
+                <div class="main__options option-2">
+                    <div class="main__options__content">
+                        <h3>Cây Cảnh Phong Thủy</h3>
+                        <span>Cây cảnh từ lâu đã được biết đến không chỉ có tác dụng tốt cho sức khỏe, ý nghĩa với môi trường và dùng để trang trí không gian. Mà nó còn được coi là một trong những vật phẩm phong thủy. Theo các chuyên gia thì cây cảnh phong thủy có rất nhiều loại.</span>
+                        <button>Xem ngay</button>
+                    </div>
+                    
+                </div>
+                <div class="main__options option-3">
+                    <div class="main__options__content">
+                        <h3>Cây Cảnh Trong Nhà</h3>
+                    <span>Cây cảnh trong nhà là những loại cây cảnh ưa bóng mát, cây có thể sống và phát triển tốt ở điều kiện ít nắng và có điều hòa, chỉ có ánh điện huỳnh quang, việc để cây cảnh trong nhà là việc cần thiết, vì đa số cây sống được tốt ở trong nhà đều có tác dụng hút bụi, lọc không khí.</span>
+                        <button>Xem ngay</button>
+                    </div>
+        
+                </div>
+                <div class="main__options option-4">
+                    <div class="main__options__content">
+                        <h3>Cây Cảnh Văn Phòng</h3>
+                    <span>Theo khoa học đã chứng minh thì màu xanh lá cây sẽ giúp cho con người giảm căng thẳng mỏi mệt, cải thiện tâm trạng không được tốt và nó làm dịu mắt. Con số cây cảnh văn phòng mang lại giúp tăng 20% trí nhớ và 15% sự tập trung, tốt cho sức khỏe.</span>
+                        <button>Xem ngay</button>
+                    </div>
+                </div>
+            </div>
+       </div>
+        
+       <div class="main--sale">
+            <div class="about-shop">
+                <h1 class="about-shop__title ">Về chúng tôi</h1>
+                <p class="about-shop-text">
+                    Đến với Trang Web Cây Cảnh không đơn giản chỉ là mua cây, mà chúng tôi còn hướng dẫn quý khách hàng cách chăm sóc, cách khắc phục khi cây gặp phải vấn đề không tốt, cây cảnh mua tại cửa hàng đều được bảo hành 7 ngày đến 30 ngày tùy vào cây to hay nhỏ, để đảm bảo sản phẩm hoàn toàn là chất lượng không bị ủ bệnh trước khi mua.
+                </p>
+                <img src="./img/nencaydep.jpg" alt="" class="about-shop-img">
+                <ul class="about-list">
+                    <li class="about-li"><p class="about-shop-text">Có thể có ít thuốc trừ sâu bọ hoặc hóa chất khác.</p> </li>
+                    <li class="about-li"><p class="about-shop-text">Cây cảnh siêu xinh đẹp để bàn tha hồ chọn lựa.</p> </li>
+                    <li class="about-li"><p class="about-shop-text">giá rất hạt dẻ để mọi người chọn lựa.</p> </li>
+                    <li class="about-li"><p class="about-shop-text">Áp dụng các phương pháp trồng của chúng tôi nên cây không có bệnh.</p></li>
+                </ul>
+            </div>
+            <div class="sidebar--sale">
+                <h2 class="sidebar--title">Big Sales</h2>
+                <a class="sidebar--buy" href="./SanPham.html">Mua ngay</a>
+                <a href="./SanPham.html"><img src="./img/bigsale.jpg" alt="" class="sale-img"></a>
+            </div>
+       </div>
+
+       <div class="topbuy--primary"><h1>Sản phẩm bán chạy</h1></div>
+
+       <div class="topbuy">
+            <div class="topbuy--option" id="sanpham">
+                <div class="topbuy-item">
+                    <img class="topbuy--img product--img" src="./img/cay-xoai-cong-trinh-255x255.jpg" alt="">
+                    <div class="topbuy__info">
+                        <p class="topbuy--name product--name ">Cây Xoài</p>
+                        <p class="topbuy--price product--price">450,000</p>
+                        <button class="topbuy-buy"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="topbuy--option" id="sanpham">
+                <div class="topbuy-item">
+                    <img class="topbuy--img product--img" src="./img/cay-loc-vung-dep-255x255.jpg" alt="">
+                <div class="topbuy__info">
+                    <p class="topbuy--name product--name ">Cây Lộc Vừng</p>
+                    <p class="topbuy--price product--price">2,500,000</p>
+                    <button class="topbuy-buy"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                </div>
+            </div>
+            <div class="topbuy--option" id="sanpham">
+                <div class="topbuy-item">
+                    <img class="topbuy--img product--img" src="./img/cay-kim-ngan-cu-to.jpg" alt="">
+                <div class="topbuy__info">
+                    <p class="topbuy--name product--name ">Cây Kim Ngân Củ To</p>
+                    <p class="topbuy--price product--price">290,000</p>
+                    <button class="topbuy-buy"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                </div>
+            </div>
+            <div class="topbuy--option" id="sanpham">
+                <div class="topbuy-item">
+                    <img class="topbuy--img product--img" src="./img/thong-caribe-255x255.jpg" alt="">
+                <div class="topbuy__info">
+                    <p class="topbuy--name product--name ">Cây Thông Caribe</p>
+                    <p class="topbuy--price product--price">710,000</p>
+                    <button class="topbuy-buy"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                </div>
+            </div>
+            <div class="topbuy--option" id="sanpham">
+                <div class="topbuy-item">
+                    <img class="topbuy--img product--img" src="./img/cay-phu-quy-chau-su-AGLA001.jpg" alt="">
+                <div class="topbuy__info">
+                    <p class="topbuy--name product--name ">Cây Phú Qúy Để Bàn</p>
+                    <p class="topbuy--price product--price">1,700,000</p>
+                    <button class="topbuy-buy"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                </div>
+            </div>
+            <div class="topbuy--option" id="sanpham">
+                <div class="topbuy-item">
+                    <img class="topbuy--img product--img" src="./img/caysenda.jpg" alt="">
+                <div class="topbuy__info">
+                    <p class="topbuy--name product--name ">Cây Sen Đá</p>
+                    <p class="topbuy--price product--price">2,500,000</p>
+                    <button class="topbuy-buy"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                </div>
+            </div>
+            <div class="topbuy--option" id="sanpham">
+                <div class="topbuy-item">
+                    <img class="topbuy--img product--img" src="./img/cay-kim-ngan-don-than-lon-255x255.jpg" alt="">
+                <div class="topbuy__info">
+                    <p class="topbuy--name product--name ">Cây Kim Ngân Đơn Thân Lớn</p>
+                    <p class="topbuy--price product--price">300,000</p>
+                    <button class="topbuy-buy"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                </div>
+            </div>
+            <div class="topbuy--option" id="sanpham">
+                <div class="topbuy-item">
+                    <img class="topbuy--img product--img" src="./img/cay-monstera-albo-de-ban-255x255.jpg" alt="">
+                <div class="topbuy__info">
+                    <p class="topbuy--name product--name ">Cây Monstera Albo để bàn</p>
+                    <p class="topbuy--price product--price">5,700,000</p>
+                    <button class="topbuy-buy"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="hotline">
+        <div class="hotline-theme">
+            <div class="hotline-content">
+                <h2 class="hotline__h2">Hotline</h2>
+                <a class="hotline__a" href="">0912345611</a>
+                <p class="hotline__p">Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng.</p>
+            </div>
+        </div>
+    </div>
+       
+
+
+    </main> 
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="footer__new-letter">
+                <h3 class="footer__new-letter__primary">Đăng ký nhận khuyến mãi</h3>
+                <div class="footer__new-letter__form">
+                    <div class="footer__new-letter__input">
+                        <input placeholder="Nhập email của bạn" type="email">
+                    </div>
+                    <div class="footer__new-letter__btn">
+                        <button class="">Đăng ký</button>
+                    </div>
+            </div>
+        </div>
+        <!-- <div class="footer-main__container"> -->
+            <div class="footer-main__container__content">
+                <div class="footer-main__container__items footer-main__container__items--contact">
+                    <div class="footer-main__container__item">
+                        <img src="../img/logo.png" alt="">
+                    </div>
+                    <ul class="footer-main__container__items__ul">
+                        <li class="footer-main__container__items__li"><i class="fa-solid fa-location-dot"></i>30/4, Ninh Kiều, TP Cần Thơ</li>
+                        <li class="footer-main__container__items__li"><i class="fa-solid fa-mobile-screen-button"></i>0912345611</li>
+                        <li class="footer-main__container__items__li"><i class="fa-solid fa-phone"></i>0912345611</li>
+                        <li class="footer-main__container__items__li"><i class="fa-solid fa-envelope"></i>luispeter.trees@gmail.com</li>
+                    </ul>
+                    
+                </div>
+                <div class="footer-main__container__items">
+                    <div class="footer-rest-title">
+                        <h3>Chính sách đổi trả</h3>
+                    </div>
+                    <ul class="footer-main__container__items__ul">
+                        <li class="footer-main__container__items__li"><a href="" class="footer-main__container__items__a">Chính sách đổi trả</a> </li>
+                        <li class="footer-main__container__items__li"><a href="" class="footer-main__container__items__a">Chính sách bảo mật</a> </li>
+                        <li class="footer-main__container__items__li"><a href="" class="footer-main__container__items__a">Chính sách vận chuyển</a> </li>
+                        <li class="footer-main__container__items__li"><a href="" class="footer-main__container__items__a">Phương thức thanh toán</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-main__container__items">
+                    <div class="footer-rest-title">
+                        <h3>về chúng tôi</h3>
+                    </div>
+                    <ul class="footer-main__container__items__ul">
+                        <li class="footer-main__container__items__li" > <a href="" class="footer-main__container__items__a">Giỏ hàng</a> </li>
+                        <li class="footer-main__container__items__li" > <a href="" class="footer-main__container__items__a">Giới thiệu</a> </li>
+                        <li class="footer-main__container__items__li" > <a href="" class="footer-main__container__items__a">Hướng dẫn mua hàng</a> </li>
+                        <li class="footer-main__container__items__li" > <a href="" class="footer-main__container__items__a">Liên hệ</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-main__container__items">
+                    <div class="footer-rest-title">
+                        <h3>mạng xã hội</h3>
+                    </div>
+                    <ul class="footer-main__container__items__ul">
+                        <li class="footer-main__container__items__li" ><a href="" class="footer-main__container__items__a"><i class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+                        <li class="footer-main__container__items__li" ><a href="" class="footer-main__container__items__a"><i class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+                        <li class="footer-main__container__items__li" ><a href="" class="footer-main__container__items__a"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+                        <li class="footer-main__container__items__li" ><a href="" class="footer-main__container__items__a"><i class="fa-brands fa-square-snapchat"></i>Snapchat</a></li>
+                    </ul>
+                </div>
+            </div> 
+        <!-- </div> -->
+    </footer>
+    <!-- end footer -->
+
+    <!-- backtop -->
+    <a href="#" class="back-top">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+
+    <!-- <script src="./asset/ThemSanPham.js"></script> -->
+    <script src="./asset/main.js"></script> 
+
+    <script>   
+        // thay doi slider trang chu
+        var imgtag = document.getElementById("slider--img1");
+        var imgArr = ["./img/slider_1.jpg", "./img/m_slider_2.jpg"];
+        var i=0;
+        function changImg() {
+            imgtag.setAttribute("src", imgArr[i]);
+            i++;
+            if(i==imgArr.length) i=0;
+        }
+        setInterval(changImg, 1500);
+    </script>
+
+    <script>
+        const prices = document.querySelectorAll('.card__price');
+        prices.forEach(item => {
+        item.innerText = Number(item.innerText).toLocaleString('de-DE', { style: 'currency', currency: 'VND' });
+        })
+        window.onload = loadShoppingCart;
+    </script>
+
+
+</body>
+</html>
